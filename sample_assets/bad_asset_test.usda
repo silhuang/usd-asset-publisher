@@ -1,0 +1,21 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+def "Root"
+{
+    def Cube "Cube_001_FINAL"
+    {
+    }
+
+    def Material "bad_mat"
+    {
+        def Shader "MissingTex"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @textures/non_existent_texture.png@
+        }
+    }
+}
+
