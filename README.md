@@ -84,6 +84,14 @@ def Xform "World"
 }
 ```
 
+## Running Tests
+
+Run the automated unit test suite (built with Python's standard `unittest` framework) to verify validation rules, broken texture detection, and master stage assembly:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ## Future Improvements
 
 - **DCC Integration:** Wrap the validator as a pre-export shelf tool inside Autodesk Maya (maya.cmds) or SideFX Houdini (hou).
